@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsive</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style type="text/css">
+				*{
+					margin:0;
+					padding: 0;
+					box-sizing: border-box;
+				}
+				.head{
+					width: 100%;
+					height: auto;
+					display: flex;
+					background-color:#c3c3c3;
+				}
+				.head .img{
+					height: 100px;
+					width: 120px;
+					padding:10px;
+				}
+				.overlay {
+					  position: relative;
+					  top: 0;
+					  bottom: 0;
+					  left: 0;
+					  right: 0;
+					  height: 450px;
+					  width: 100%;
+					  opacity: 0;
+					  transition: .7s ease;
+					  background-color: forestgreen;
+					}
+
+					.image:hover .overlay {
+					  opacity: 0.7;
+					}
+				.text {
+					  color: white;
+					  font-size: 60px;
+					  position: absolute;
+					  top: 50%;
+					  left: 50%;
+					  -webkit-transform: translate(-50%, -50%);
+					  -ms-transform: translate(-50%, -50%);
+					  transform: translate(-50%, -50%);
+					  text-align: center;
+					}
+				.head h1{
+					color: black;
+					text-align: left;
+					width: 50%;
+					line-height: 95px;
+				}
+				nav{
+					width: 50%;
+					text-align: right;
+					padding: 10px;
+					font-weight: 600;
+				}
+				.head nav a{
+					line-height: 75px;
+					text-decoration: none;
+					font-size: 18px;
+					padding: 10px;
+					color:black;
+				}
+				a{
+					text-decoration: none;
+					color: white;
+				}
+				.image{
+					background-image: url('w_1200.jpg');
+					background-repeat: no-repeat;
+					height: 450px;
+					background-size: 100%;
+					width: 100%;
+				}
+				
+				.service h2{
+					text-align: center;
+					line-height: 100px;
+					font-weight: 30px;
+					font-size: 30px;
+					color:  black ;
+				}
+				.service{
+					height: 300px;
+					width: 100%;
+					text-align: center;
+					background-color: #d7d7d7d7;
+				}
+				.service p{
+					text-align: center;
+					font-size: 14px;
+					padding: 10px;
+					color: black;
+					line-height: 2;
+					
+				}
+				.box{
+					height: 320px;
+					width: 90%;
+					display: flex;
+					align-items: center;
+					margin-left: 5%;
+					padding: 10px;
+					
+				}
+				.box > div{
+					text-align: center;
+					flex: 1;
+					margin: 10px;
+					padding: 10px;
+				}
+				.box1{
+					height: 300px;
+					width: 350px;
+					color: white;
+					background-color:royalblue;
+				
+				}
+				.box2{
+					height: 300px;
+					width: 350px;
+					color: white;
+					background-color: red;
+				
+				}
+				.box3{
+					height: 300px;
+					width: 350px;
+					color: white;
+					background-color: forestgreen;
+				
+				}
+				.box h2{
+					text-align: center;
+					line-height: 100px;
+					font-weight: 30px;
+					font-size: 30px;
+					color:  white ;
+				}
+				
+				.image_sec{
+					height: 400px;
+					width: 100%;
+					background-color: #e6e6ff;
+					text-align: center;
+					
+				
+				}
+				.image_sec h1{
+					font-size: 30px;
+					padding: 10px;
+					color: black;
+					text-transform: capitalize;
+				}
+				.image_sec p{
+					padding: 15px;
+				}
+				.img1{
+					display: flex;
+					margin:10px;
+					justify-content: center;
+
+				}
+				.img2 img{
+					height:200px;
+					width: 300px;
+					flex: 1;
+				}
+				.img3 img{
+					height:200px;
+					width: 300px;
+					margin-left: 20px;
+					flex: 1;
+				}
+				.img4 img{
+					height:200px;
+					width: 300px;
+					margin-left: 20px;
+					flex: 1;
+				}
+				footer{
+					height: auto;
+					width: 100%;
+					background-color:black;
+					color: white;
+					padding: 10px;
+					text-align: center;
+					}
+				
+							
+				@media screen and (min-width: 767px) and (max-width: 1024px){
+					.overlay {
+					  position: relative;
+					  top: 0;
+					  bottom: 0;
+					  left: 0;
+					  right: 0;
+					  height: 450px;
+					  width: 100%;
+					  opacity: 0;
+					  transition: .7s ease;
+					  background-color: forestgreen;
+					}
+					.box{
+						display: flex;
+						margin-left: 5%;
+						padding: 0px;
+						height: auto;
+						width: 90%;
+					}
+					.box1{
+						width: 50%;
+						height: auto;
+					}
+					.box2{
+						width: 50%;
+						height: auto;
+					}
+					.box3{
+						width: 50%;
+						height: auto;
+					}
+					.img1{
+						justify-content: right;
+						margin-right: 76px;
+					}
+					.img2{
+						visibility: hidden;
+					}
+					.img4{
+						width: 50%;
+					}
+					.img3{
+						width: 50%;
+					}
+				}
+			@media screen and (min-width: 320px) and (max-width: 700px){
+				.head h1{
+					font-size: 14px;
+				}
+				.head nav a{
+					font-size: 14px;
+				}
+				.image{
+					height: 200px;
+					width: 100%;
+				}
+				.overlay {
+					  position: relative;
+					  top: 0;
+					  bottom: 0;
+					  left: 0;
+					  right: 0;
+					  height: 200px;
+					  width: 100%;
+					  opacity: 0;
+					  transition: .7s ease;
+					  background-color: forestgreen;
+					}
+					.text{
+						font-size: 30px;
+					}
+				.service{
+					height: auto;
+					padding: 20px;
+				}
+				.service h2{
+					line-height: 40px;
+				}
+				.box{
+					display: block;
+					height: auto;
+					margin-left: 0;
+					width: 96%;
+				}
+				.box1,.box2,.box3{
+					width: 100%;
+					height: auto;
+				}
+				.img1{
+					display: block;
+				}
+				.img1 img{
+					padding: 10px;
+				}
+				.image_sec{
+					height: auto;
+
+				}
+				.image_sec h1,p{
+					padding: 10px;
+					
+				}
+				.img4 img{
+					margin-left: 0px;
+				}
+				.img3 img{
+					margin-left: 0px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		
+		<header>
+			<div class="head">
+				<img src="ood.png" class="img"> <h1>ENVIRONMENT</h1>
+				<nav>
+					<a href="">HOME</a>
+					<a href="">ABOUT</a>
+					<a href="">GALLERY</a>
+					<a href="">CONTACT</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="image">
+				<div class="overlay">
+    <div class="text">Go Green</div>
+  </div>
+			</div>
+			<section>
+				<div class="service">
+					<h2>Beautiful. Clean. Responsive.</h2>
+					<p>REEN is a high-quality solution for those who want a beautiful website in no time.
+					it'sfully responsive and will adapt <br>iyself to any mobile device,ipad iphone Android, it doesn't matter.<br>Your content will always looks its absolute best.</p>
+				</div>
+				<div class="box">
+					<div class="box1">
+						<i class="fa fa-asl-interpreting" style="font-size:36px"></i><br>
+						<h2>Passion</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolores voluptatum voluptate eaque molestias, mollitia saepe ut, ipsum tenetur excepturi error consequatur et nihil fugiat minus quos sit, architecto ullam?</p>
+					</div>
+					<div class="box2">
+						<i class="fa fa-modx" style="font-size:36px"></i><br>
+						<h2>Creativity</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolores voluptatum voluptate eaque molestias, mollitia saepe ut, ipsum tenetur excepturi error consequatur et nihil fugiat minus quos sit, architecto ullam?</p>
+					</div>
+					<div class="box3">
+						<i class="fa fa-check-square-o" style="font-size:36px;"></i><br>
+						<h2>Quality</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolores voluptatum voluptate eaque molestias, mollitia saepe ut, ipsum tenetur excepturi error consequatur et nihil fugiat minus quos sit, architecto ullam?</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="image_sec">
+					<h1>Check out our latest works</h1>
+					<p>Magnis modipsae que voloratatati andigen daepededitem quiate re porem aut lebor.</p>
+					<div class="img1">
+						<div class="img2">
+							<img src="environment-web_tcm73-79759.jpg">
+						</div>
+						<div class="img3">
+							<img src="2nd.jpg">
+						</div>
+						<div class="img4">
+							<img src="3rd.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			Made  <i class="fa fa-heart" style="font-size:20px; color:red"></i> by Minki Singh <i class="fa fa-copyright" style="font-size:20px"></i> 2020
+			<a href="https://www.facebook.com/khabaitech"><i class="fa fa-facebook-square" style="font-size:20px"></i></a>
+			<a href="https://twitter.com/KhabaiTech"><i class="fa fa-twitter-square" style="font-size:20px"></i></a>
+			<a href="https://www.linkedin.com/company/khabai-tech"><i class="fa fa-linkedin-square" style="font-size:20px; color: white"></i></a>
+			<a href="https://www.youtube.com/results?search_query=khabai+tech"><i class="fa fa-youtube-square" style="font-size:20px; color: white"></i></a>
+			
+		</footer>
+	</body>
+</html>
